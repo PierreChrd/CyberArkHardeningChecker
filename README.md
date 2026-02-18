@@ -13,6 +13,10 @@
 
 ---
 
+####  *English Version [README-ENGLISH.md](./README-ENGLISH.md)*
+
+---
+
 ## 📖 À propos
 
 **CyberArk Hardening Checker** est un moteur modulaire permettant de vérifier automatiquement la conformité et le durcissement des différents composants CyberArk :
