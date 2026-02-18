@@ -150,16 +150,6 @@ powershell.exe -ExecutionPolicy Bypass -File .\HardeningChecker.ps1
 
 ---
 
-## 🧭 Roadmap
-
-- [ ] Ajout d’un validateur JSON (schema)  
-- [ ] Support YAML pour les rules  
-- [ ] Génération automatique RULES.md  
-- [ ] Intégration CI GitHub Actions  
-- [ ] Support PSMP / Conjur / PTA  
-
----
-
 ## 🤝 Contribution
 
 Les contributions sont les bienvenues :  
@@ -180,6 +170,4 @@ Projet sous licence **MIT**.
 
 ---
 
-<div align="center">
-✨ *Créé par Pierre Chaussard — pour automatiser le durcissement CyberArk.*
-</div>
+✨ Créé par Pierre Chaussard — pour automatiser le durcissement CyberArk.
