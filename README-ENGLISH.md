@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 🔐 CyberArk Hardening Checker (English)
+# 🔐 CyberArk Hardening Checker (🇺🇸🇬🇧)
 ### *An extensible hardening validation engine for CyberArk servers*
 
 ![cyberark](https://img.shields.io/badge/CyberArk-Hardening%20Toolkit-0a74da?logo=cyberark&logoColor=white)
