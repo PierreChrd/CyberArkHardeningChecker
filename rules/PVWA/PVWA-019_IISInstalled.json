@@ -1,0 +1,17 @@
+{
+  "id": "PVWA-019",
+  "title": "IIS_Role_Installed",
+  "description": "IIS Web-Server should be installed on PVWA hosts",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "high",
+  "command": "(Get-WindowsFeature -Name Web-Server).Installed",
+  "operator": "eq",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "iis"
+  ]
+}

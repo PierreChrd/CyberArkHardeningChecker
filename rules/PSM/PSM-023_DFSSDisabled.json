@@ -1,0 +1,18 @@
+{
+  "id": "PSM-023",
+  "title": "DFSS_Disabled",
+  "description": "DFSS scheduling must be disabled",
+  "type": "registry",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "medium",
+  "tags": [
+    "psm",
+    "performance"
+  ],
+  "path": "HKLM:/SYSTEM/CurrentControlSet/Control/Session Manager/Quota System",
+  "expected": {
+    "EnableCpuQuota": 0
+  }
+}

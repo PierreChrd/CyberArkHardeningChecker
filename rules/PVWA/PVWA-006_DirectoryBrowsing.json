@@ -1,0 +1,16 @@
+{
+  "id": "PVWA-006",
+  "title": "PVWA_DirectoryBrowsing",
+  "description": "PVWA IIS Directory Browsing",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "high",
+  "command": "(Get-WebConfigurationProperty -Filter 'system.webServer/directoryBrowse' -PSPath 'IIS:/Sites' -Name enabled).Value -eq $false",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "iis"
+  ]
+}

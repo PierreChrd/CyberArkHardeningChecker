@@ -1,0 +1,16 @@
+{
+  "id": "WIN-015",
+  "title": "DisableService_SACSVR",
+  "description": "Ensure service 'Special Administration Console Helper' is Disabled/Stopped",
+  "type": "service",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "high",
+  "serviceName": "Special Administration Console Helper",
+  "expectedStatus": "Stopped",
+  "tags": [
+    "cross",
+    "services"
+  ]
+}

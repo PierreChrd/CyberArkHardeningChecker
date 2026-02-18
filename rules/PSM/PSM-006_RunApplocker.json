@@ -1,0 +1,16 @@
+{
+  "id": "PSM-006",
+  "title": "RunApplocker",
+  "description": "Check up AppLocker Rules",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "high",
+  "command": "(Get-AppLockerPolicy -Effective -Xml -ErrorAction SilentlyContinue) -ne $null",
+  "expected": true,
+  "tags": [
+    "psm",
+    "applocker"
+  ]
+}

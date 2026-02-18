@@ -1,0 +1,16 @@
+{
+  "id": "PSM-009",
+  "title": "HidePSMDrives",
+  "description": "Hide PSM Drives",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "medium",
+  "command": "(Get-ItemProperty 'HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Policies/Explorer' -ErrorAction SilentlyContinue).NoDrives -ne $null",
+  "expected": true,
+  "tags": [
+    "psm",
+    "policy"
+  ]
+}

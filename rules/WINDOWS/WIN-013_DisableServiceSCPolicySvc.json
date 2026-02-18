@@ -1,0 +1,16 @@
+{
+  "id": "WIN-013",
+  "title": "DisableService_SCPolicySvc",
+  "description": "Ensure service 'Smart Card Removal Policy' is Disabled/Stopped",
+  "type": "service",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "high",
+  "serviceName": "Smart Card Removal Policy",
+  "expectedStatus": "Stopped",
+  "tags": [
+    "cross",
+    "services"
+  ]
+}

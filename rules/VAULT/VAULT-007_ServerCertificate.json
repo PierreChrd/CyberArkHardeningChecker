@@ -1,0 +1,16 @@
+{
+  "id": "VAULT-007",
+  "title": "Vault_ServerCertificate",
+  "description": "Vault Server Certificate",
+  "type": "command",
+  "appliesTo": [
+    "Vault"
+  ],
+  "severity": "high",
+  "command": "(Get-ChildItem Cert:/LocalMachine/My | Measure).Count -ge 1",
+  "expected": true,
+  "tags": [
+    "vault",
+    "cert"
+  ]
+}

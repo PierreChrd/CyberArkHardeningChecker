@@ -1,0 +1,17 @@
+{
+  "id": "PVWA-024",
+  "title": "Disable_DynamicCompression",
+  "description": "Dynamic compression must be disabled",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "medium",
+  "tags": [
+    "pvwa",
+    "iis",
+    "compression"
+  ],
+  "command": "(Get-WebConfigurationProperty 'system.webServer/httpCompression' 'IIS:' -Name dynamicCompressionEnable).Value -eq $false",
+  "expected": true
+}

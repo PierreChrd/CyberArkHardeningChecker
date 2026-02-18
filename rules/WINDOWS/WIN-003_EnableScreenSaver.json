@@ -1,0 +1,16 @@
+{
+  "id": "WIN-003",
+  "title": "EnableScreenSaver",
+  "description": "Checks if the screen saver is disabled",
+  "type": "command",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "low",
+  "command": "-not (Get-ItemProperty -Path 'HKCU:Control Panel/Desktop' -Name ScreenSaveActive -ErrorAction SilentlyContinue).ScreenSaveActive",
+  "expected": true,
+  "tags": [
+    "cross",
+    "ux"
+  ]
+}

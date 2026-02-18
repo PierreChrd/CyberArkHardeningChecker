@@ -1,0 +1,16 @@
+{
+  "id": "WIN-014",
+  "title": "DisableService_SNMPTRAP",
+  "description": "Ensure service 'SNMP Trap' is Disabled/Stopped",
+  "type": "service",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "high",
+  "serviceName": "SNMP Trap",
+  "expectedStatus": "Stopped",
+  "tags": [
+    "cross",
+    "services"
+  ]
+}

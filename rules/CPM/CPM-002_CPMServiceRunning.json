@@ -1,0 +1,11 @@
+{
+  "id": "CPM-002",
+  "title": "CPM_PasswordManager_Running",
+  "description": "CyberArk Password Manager service must be running on the CPM server.",
+  "type": "service",
+  "appliesTo": ["CPM"],
+  "severity": "critical",
+  "serviceName": "CyberArk Password Manager",
+  "expectedStatus": "Running",
+  "tags": ["cpm", "service"]
+}

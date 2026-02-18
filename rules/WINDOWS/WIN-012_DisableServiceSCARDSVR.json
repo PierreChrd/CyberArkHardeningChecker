@@ -1,0 +1,16 @@
+{
+  "id": "WIN-012",
+  "title": "DisableService_SCARDSVR",
+  "description": "Ensure service 'Smart Card' is Disabled/Stopped",
+  "type": "service",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "high",
+  "serviceName": "Smart Card",
+  "expectedStatus": "Stopped",
+  "tags": [
+    "cross",
+    "services"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "WIN-016",
+  "title": "DisableService_WerSvc",
+  "description": "Ensure service 'Windows Error Reporting Service' is Disabled/Stopped",
+  "type": "service",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "high",
+  "serviceName": "Windows Error Reporting Service",
+  "expectedStatus": "Stopped",
+  "tags": [
+    "cross",
+    "services"
+  ]
+}

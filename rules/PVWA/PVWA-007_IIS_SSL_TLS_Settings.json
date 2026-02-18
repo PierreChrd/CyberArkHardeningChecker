@@ -1,0 +1,17 @@
+{
+  "id": "PVWA-007",
+  "title": "PVWA_IIS_SSL_TLS_Settings",
+  "description": "PVWA IIS SSL TLS Settings",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "critical",
+  "command": "(Get-WebBinding -Name 'PasswordVault' -Protocol https | Measure).Count -ge 1",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "iis",
+    "tls"
+  ]
+}

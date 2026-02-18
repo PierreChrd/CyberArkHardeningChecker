@@ -1,0 +1,16 @@
+{
+  "id": "CPM-003",
+  "title": "CPM_PasswordManager_Start_Type_Automatic",
+  "description": "CyberArk Password Manager service should start automatically",
+  "type": "service",
+  "appliesTo": [
+    "CPM"
+  ],
+  "severity": "high",
+  "serviceName": "CyberArk Central Policy Manager",
+  "expectedStatus": "Running",
+  "expectedStartType": "Auto",
+  "tags": [
+    "cpm"
+  ]
+}

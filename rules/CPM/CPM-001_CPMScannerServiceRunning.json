@@ -1,0 +1,11 @@
+{
+  "id": "CPM-001",
+  "title": "CPM_Scanner_Running",
+  "description": "CyberArk Central Policy Manager Scanner must be running.",
+  "type": "service",
+  "appliesTo": ["CPM"],
+  "severity": "critical",
+  "serviceName": "CyberArk Central Policy Manager Scanner",
+  "expectedStatus": "Running",
+  "tags": ["cpm", "service"]
+}

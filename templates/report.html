@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Compliance Report</title>
+<style>
+ body { font-family: Segoe UI, Arial, sans-serif; margin: 24px; }
+ h1 { margin-bottom: 0; }
+ h2 { margin-top: 32px; }
+ .score { font-size: 1.2em; margin: 8px 0 16px; }
+ table { border-collapse: collapse; width: 100%; }
+ th, td { border: 1px solid #ddd; padding: 8px; }
+ th { background: #0f6cbd; color: white; }
+ tr.pass { background: #e8f5e9; }
+ tr.fail { background: #ffebee; }
+ tr.skipped { background: #f3f2f1; }
+ .pill { padding: 2px 8px; border-radius: 10px; color: white; }
+ .low { background:#6b6b6b; }
+ .medium { background:#3b82f6; }
+ .high { background:#f59e0b; }
+ .critical { background:#ef4444; }
+</style>
+</head>
+<body>
+<h1>Hardening & Compliance Report</h1>
+<div class="score">Generated: {{generated}} | Profile: {{profile}} | Compliance: <b>{{score}}%</b></div>
+<table>
+<thead><tr><th>ID</th><th>Title</th><th>Status</th><th>Severity</th><th>Actual</th><th>Expected</th><th>Component</th><th>Tags</th></tr></thead>
+<tbody>
+{{rows}}
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "id": "PVWA-011",
+  "title": "PVWA_IIS_Hardening",
+  "description": "PVWA IIS Hardening",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "medium",
+  "command": "(Get-WebConfigurationProperty -Filter 'system.webServer/security/requestFiltering' -PSPath 'IIS:/Sites' -Name .) -ne $null",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "iis",
+    "hardening"
+  ]
+}

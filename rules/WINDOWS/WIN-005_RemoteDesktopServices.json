@@ -1,0 +1,16 @@
+{
+  "id": "WIN-005",
+  "title": "RemoteDesktopServices",
+  "description": "Check Remote Desktop Services settings",
+  "type": "command",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "high",
+  "command": "(Get-ItemProperty -Path 'HKLM:SOFTWARE/Microsoft/Windows NT/CurrentVersion/Winlogon').RDPAutoLogon -eq $null",
+  "expected": true,
+  "tags": [
+    "cross",
+    "rdp"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "PVWA-017",
+  "title": "PVWA_AppPool_Running",
+  "description": "PVWA application pool should be started",
+  "type": "iisAppPool",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "high",
+  "poolName": "PVWAAppPool",
+  "expectedStatus": "Started",
+  "tags": [
+    "pvwa",
+    "iis"
+  ]
+}

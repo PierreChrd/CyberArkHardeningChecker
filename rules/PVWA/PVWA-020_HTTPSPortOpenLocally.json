@@ -1,0 +1,18 @@
+{
+  "id": "PVWA-020",
+  "title": "PVWA_HTTPS_Port_Open_Locally",
+  "description": "Localhost should listen on 443 for PVWA",
+  "type": "port",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "medium",
+  "host": "localhost",
+  "port": 443,
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "tls",
+    "port"
+  ]
+}

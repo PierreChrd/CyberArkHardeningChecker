@@ -1,0 +1,17 @@
+{
+  "id": "WIN-010",
+  "title": "FileSystemAudit",
+  "description": "Check audit access rules on %SystemRoot%/System32/Config and %SystemRoot%/System32/Config/RegBack.",
+  "type": "command",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "medium",
+  "command": "(@('C:/Windows/System32/Config','C:/Windows/System32/Config/RegBack') | % { (Get-Acl $_).AuditToString -match 'Success' }) -notcontains $false",
+  "expected": true,
+  "tags": [
+    "cross",
+    "filesystem",
+    "audit"
+  ]
+}

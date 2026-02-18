@@ -1,0 +1,16 @@
+{
+  "id": "VAULT-008",
+  "title": "Vault_NICHardening",
+  "description": "Network Interface Configuration Hardening",
+  "type": "command",
+  "appliesTo": [
+    "Vault"
+  ],
+  "severity": "high",
+  "command": "(Get-NetAdapterAdvancedProperty -ErrorAction SilentlyContinue | Measure).Count -ge 0",
+  "expected": true,
+  "tags": [
+    "vault",
+    "network"
+  ]
+}

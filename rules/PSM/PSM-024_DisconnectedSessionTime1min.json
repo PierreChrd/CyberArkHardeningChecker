@@ -1,0 +1,18 @@
+{
+  "id": "PSM-024",
+  "title": "DisconnectedSessionTime_1min",
+  "description": "Disconnected sessions must end after 1 min",
+  "type": "registry",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "medium",
+  "tags": [
+    "psm",
+    "rdp"
+  ],
+  "path": "HKLM:/SOFTWARE/Policies/Microsoft/Windows NT/Terminal Services",
+  "expected": {
+    "MaxDisconnectionTime": 60000
+  }
+}

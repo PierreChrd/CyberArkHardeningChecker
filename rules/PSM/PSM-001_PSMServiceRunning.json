@@ -1,0 +1,11 @@
+{
+  "id": "PSM-001",
+  "title": "PSM_PrivilegedSessionManager_Running",
+  "description": "Cyber-Ark Privileged Session Manager must be running.",
+  "type": "service",
+  "appliesTo": ["PSM"],
+  "severity": "critical",
+  "serviceName": "Cyber-Ark Privileged Session Manager",
+  "expectedStatus": "Running",
+  "tags": ["psm", "service"]
+}

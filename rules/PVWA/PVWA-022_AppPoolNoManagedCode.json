@@ -1,0 +1,16 @@
+{
+  "id": "PVWA-022",
+  "title": "AppPool_NoManagedCode",
+  "description": "PVWA AppPool must run with No Managed Code",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "high",
+  "tags": [
+    "pvwa",
+    "iis"
+  ],
+  "command": "(Get-WebAppPool -Name 'PVWAAppPool').managedRuntimeVersion -eq ''",
+  "expected": true
+}

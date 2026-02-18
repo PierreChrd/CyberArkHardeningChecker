@@ -1,0 +1,23 @@
+{
+  "id": "WIN-018",
+  "title": "TLS_1-2_Enabled",
+  "description": "Ensure TLS 1.2 is enabled (server)",
+  "type": "registry",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "high",
+  "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\Schannel\\Protocols\\TLS 1.2\\Server",
+  "operator": "eq",
+  "expected": {
+    "Enabled": 1
+  },
+  "tags": [
+    "tls",
+    "schannel"
+  ],
+  "remediation": "Set Enabled=1 for TLS 1.2 under SCHANNEL.",
+  "references": [
+    "https://learn.microsoft.com/windows-server/security/tls/tls-registry-settings"
+  ]
+}

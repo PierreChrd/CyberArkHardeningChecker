@@ -1,0 +1,11 @@
+{
+  "id": "PSM-005",
+  "title": "PSM_RemoteAppConnectionManagement_Running",
+  "description": "RemoteApp and Desktop Connection Management must be running on the PSM.",
+  "type": "service",
+  "appliesTo": ["PSM"],
+  "severity": "medium",
+  "serviceName": "RemoteApp and Desktop Connection Management",
+  "expectedStatus": "Running",
+  "tags": ["psm", "service", "rdp"]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "PVWA-014",
+  "title": "PVWA_IIS_Registry_Shares",
+  "description": "PVWA IIS Registry Shares",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "medium",
+  "command": "(Get-ItemProperty 'HKLM:/SYSTEM/CurrentControlSet/Services/LanmanServer/Parameters' -ErrorAction SilentlyContinue).AutoShareServer -ne 1",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "shares"
+  ]
+}

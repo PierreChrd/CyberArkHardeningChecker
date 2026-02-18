@@ -1,0 +1,18 @@
+{
+  "id": "PSM-025",
+  "title": "ReconnectionPolicy_OriginOnly",
+  "description": "Reconnection must be from originating client only",
+  "type": "registry",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "medium",
+  "tags": [
+    "psm",
+    "rdp"
+  ],
+  "path": "HKLM:/SOFTWARE/Policies/Microsoft/Windows NT/Terminal Services",
+  "expected": {
+    "fReconnectSame": 1
+  }
+}

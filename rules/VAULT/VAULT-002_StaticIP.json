@@ -1,0 +1,16 @@
+{
+  "id": "VAULT-002",
+  "title": "Vault_StaticIP",
+  "description": "Check that the Vault has Static IP",
+  "type": "command",
+  "appliesTo": [
+    "Vault"
+  ],
+  "severity": "critical",
+  "command": "(Get-NetIPInterface | Where-Object {$_.Dhcp -eq 'Disabled'} | Measure).Count -gt 0",
+  "expected": true,
+  "tags": [
+    "vault",
+    "network"
+  ]
+}

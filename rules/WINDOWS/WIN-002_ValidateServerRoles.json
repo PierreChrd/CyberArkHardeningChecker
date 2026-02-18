@@ -1,0 +1,16 @@
+{
+  "id": "WIN-002",
+  "title": "ValidateServerRoles",
+  "description": "This function checks for unnecessary roles",
+  "type": "command",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "medium",
+  "command": "(Get-WindowsFeature | Where-Object {$_.InstallState -eq 'Installed' -and $_.Name -in @('Fax','XPS-Viewer')}).Count -eq 0",
+  "expected": true,
+  "tags": [
+    "cross",
+    "roles"
+  ]
+}

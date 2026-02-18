@@ -1,0 +1,16 @@
+{
+  "id": "WIN-017",
+  "title": "DisableService_WinHttpAutoProxySvc",
+  "description": "Ensure service 'WinHTTP Web Proxy Auto-Discovery Service' is Disabled/Stopped",
+  "type": "service",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "high",
+  "serviceName": "WinHTTP Web Proxy Auto-Discovery Service",
+  "expectedStatus": "Stopped",
+  "tags": [
+    "cross",
+    "services"
+  ]
+}

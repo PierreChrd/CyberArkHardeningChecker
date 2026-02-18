@@ -1,0 +1,16 @@
+{
+  "id": "PSM-022",
+  "title": "PSMAdminConnect_Exists",
+  "description": "PSMAdminConnect user must exist",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "high",
+  "tags": [
+    "psm",
+    "account"
+  ],
+  "command": "[bool](Get-LocalUser -Name 'PSMAdminConnect' -ErrorAction SilentlyContinue)",
+  "expected": true
+}

@@ -1,0 +1,16 @@
+{
+  "id": "CPM-004",
+  "title": "CPM_CredFileHardening",
+  "description": "Credential File Hardening",
+  "type": "command",
+  "appliesTo": [
+    "CPM"
+  ],
+  "severity": "high",
+  "command": "Test-Path 'C:/Program Files (x86)/CyberArk/Password Manager/Temp/credfile'",
+  "expected": false,
+  "tags": [
+    "cpm",
+    "file"
+  ]
+}

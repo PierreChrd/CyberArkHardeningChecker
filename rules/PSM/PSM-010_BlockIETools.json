@@ -1,0 +1,16 @@
+{
+  "id": "PSM-010",
+  "title": "BlockIETools",
+  "description": "Block IE Developer Tools and Context menu",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "medium",
+  "command": "(Get-ItemProperty 'HKLM:/SOFTWARE/Policies/Microsoft/Internet Explorer/Restrictions' -ErrorAction SilentlyContinue).NoBrowserContextMenu -eq 1",
+  "expected": true,
+  "tags": [
+    "psm",
+    "browser"
+  ]
+}

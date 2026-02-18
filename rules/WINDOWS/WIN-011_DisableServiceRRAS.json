@@ -1,0 +1,16 @@
+{
+  "id": "WIN-011",
+  "title": "DisableService_RRAS",
+  "description": "Ensure service 'Routing and Remote Access' is Disabled/Stopped",
+  "type": "service",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "high",
+  "serviceName": "Routing and Remote Access",
+  "expectedStatus": "Stopped",
+  "tags": [
+    "cross",
+    "services"
+  ]
+}

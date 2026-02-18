@@ -1,0 +1,16 @@
+{
+  "id": "CPM-006",
+  "title": "CPM_DisableDEPForExecutables",
+  "description": "CPM Disable DEP For Executables",
+  "type": "command",
+  "appliesTo": [
+    "CPM"
+  ],
+  "severity": "medium",
+  "command": "(Get-ProcessMitigation -System).DEP.Enable",
+  "expected": false,
+  "tags": [
+    "cpm",
+    "dep"
+  ]
+}

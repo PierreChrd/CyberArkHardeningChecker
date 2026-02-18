@@ -1,0 +1,16 @@
+{
+  "id": "PSM-013",
+  "title": "HardenSMBServices",
+  "description": "Harden SMB and XB Services",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "high",
+  "command": "(Get-SmbServerConfiguration).EnableSMB1Protocol -eq $false",
+  "expected": true,
+  "tags": [
+    "psm",
+    "smb"
+  ]
+}

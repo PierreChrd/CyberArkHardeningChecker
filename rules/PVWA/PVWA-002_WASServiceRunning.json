@@ -1,0 +1,11 @@
+{
+  "id": "PVWA-002",
+  "title": "PVWA_WAS_Running",
+  "description": "Windows Process Activation Service must be running on the PVWA server.",
+  "type": "service",
+  "appliesTo": ["PVWA"],
+  "severity": "critical",
+  "serviceName": "Windows Process Activation Service",
+  "expectedStatus": "Running",
+  "tags": ["pvwa", "iis", "service"]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "PVWA-008",
+  "title": "PVWA_IIS_Cypher_Suites",
+  "description": "PVWA IIS Cypher Suites",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "critical",
+  "command": "(Get-TlsCipherSuite | Where-Object {$_.Name -like 'TLS_RSA_*'} | Measure).Count -eq 0",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "cipher"
+  ]
+}

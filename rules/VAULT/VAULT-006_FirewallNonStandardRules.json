@@ -1,0 +1,17 @@
+{
+  "id": "VAULT-006",
+  "title": "Vault_FirewallNonStandardRules",
+  "description": "Vault Firewall Rule",
+  "type": "command",
+  "appliesTo": [
+    "Vault"
+  ],
+  "severity": "medium",
+  "command": "(Get-NetFirewallRule -ErrorAction SilentlyContinue | Where-Object {$_.Enabled -eq 'True'} | Measure).Count -ge 1",
+  "expected": true,
+  "tags": [
+    "vault",
+    "firewall",
+    "rules"
+  ]
+}

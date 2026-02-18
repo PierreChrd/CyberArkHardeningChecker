@@ -1,0 +1,16 @@
+{
+  "id": "PVWA-016",
+  "title": "PVWA_Cryptography_Settings",
+  "description": "PVWA Cryptography Mode Settings",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "high",
+  "command": "(Get-TlsCipherSuite | Where-Object {$_.Name -like '*TLS_RSA_*'} | Measure).Count -eq 0",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "tls"
+  ]
+}

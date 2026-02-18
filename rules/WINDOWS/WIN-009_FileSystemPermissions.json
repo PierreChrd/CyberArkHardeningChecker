@@ -1,0 +1,17 @@
+{
+  "id": "WIN-009",
+  "title": "FileSystemPermissions",
+  "description": "Validates unnecessary permissions on %SystemRoot%/System32/Config and %SystemRoot%/System32/Config/RegBack.",
+  "type": "command",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "high",
+  "command": "(@('C:/Windows/System32/Config','C:/Windows/System32/Config/RegBack') | % { (Get-Acl $_).AccessToString -notmatch 'Everyone' }) -notcontains $false",
+  "expected": true,
+  "tags": [
+    "cross",
+    "filesystem",
+    "acl"
+  ]
+}

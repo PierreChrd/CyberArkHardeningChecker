@@ -1,0 +1,17 @@
+{
+  "id": "PVWA-004",
+  "title": "PVWA_IIS_MimeTypes",
+  "description": "PVWA IIS MimeTypes",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "low",
+  "command": "(Get-WebConfigurationProperty -pspath 'IIS:/Sites' -filter system.webServer/staticContent -name .).Collection.Count -ge 0",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "iis",
+    "mime"
+  ]
+}

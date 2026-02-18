@@ -1,0 +1,18 @@
+{
+  "id": "WIN-008",
+  "title": "SMBv1 disabled",
+  "description": "Disable SMBv1 server component",
+  "type": "registry",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "high",
+  "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters",
+  "operator": "eq",
+  "expected": {
+    "SMB1": 0
+  },
+  "tags": [
+    "smb"
+  ]
+}

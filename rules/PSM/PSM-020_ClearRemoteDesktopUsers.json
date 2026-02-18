@@ -1,0 +1,16 @@
+{
+  "id": "PSM-020",
+  "title": "ClearRemoteDesktopUsers",
+  "description": "Clear Remote Desktop Users group from PSM Server",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "high",
+  "command": "(Get-LocalGroupMember -Group 'Remote Desktop Users' -ErrorAction SilentlyContinue | Measure).Count -eq 0",
+  "expected": true,
+  "tags": [
+    "psm",
+    "rdp"
+  ]
+}

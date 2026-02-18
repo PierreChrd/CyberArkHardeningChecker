@@ -1,0 +1,17 @@
+{
+  "id": "PVWA-005",
+  "title": "PVWA_AnonymousAuthentication",
+  "description": "PVWA IIS Anonymous Authentication",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "high",
+  "command": "(Get-WebConfigurationProperty -Filter 'system.webServer/security/authentication/anonymousAuthentication' -PSPath 'IIS:/Sites' -Name enabled).Value -eq $false",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "iis",
+    "auth"
+  ]
+}

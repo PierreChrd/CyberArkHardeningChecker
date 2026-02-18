@@ -1,0 +1,16 @@
+{
+  "id": "PSM-012",
+  "title": "HardenPSMUsersAccess",
+  "description": "Harden PSM Users Access",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "high",
+  "command": "(Get-Acl 'C:/Program Files/CyberArk/PSM').AccessToString -notmatch 'Everyone'",
+  "expected": true,
+  "tags": [
+    "psm",
+    "acl"
+  ]
+}

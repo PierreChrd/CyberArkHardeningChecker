@@ -1,0 +1,16 @@
+{
+  "id": "VAULT-003",
+  "title": "Vault_WindowsFirewall",
+  "description": "Check that the Vault has the Firewall active",
+  "type": "command",
+  "appliesTo": [
+    "Vault"
+  ],
+  "severity": "critical",
+  "command": "(Get-NetFirewallProfile -Profile Domain).Enabled",
+  "expected": true,
+  "tags": [
+    "vault",
+    "firewall"
+  ]
+}

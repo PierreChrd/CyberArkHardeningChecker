@@ -1,0 +1,16 @@
+{
+  "id": "PVWA-010",
+  "title": "PVWA_NonSystemDrive",
+  "description": "PVWA not installed on System drive",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "medium",
+  "command": "(Get-Item 'C:/inetpub/wwwroot/PasswordVault').PSPath -notlike 'C:*'",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "filesystem"
+  ]
+}

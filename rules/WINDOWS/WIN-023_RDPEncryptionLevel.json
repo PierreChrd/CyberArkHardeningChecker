@@ -1,0 +1,19 @@
+{
+  "id": "WIN-023",
+  "title": "RDP encryption level >= 3",
+  "description": "Ensure strong RDP encryption",
+  "type": "registry",
+  "appliesTo": [
+    "Windows",
+    "PSM"
+  ],
+  "severity": "high",
+  "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+  "operator": "ge",
+  "expected": {
+    "MinEncryptionLevel": 3
+  },
+  "tags": [
+    "rdp"
+  ]
+}

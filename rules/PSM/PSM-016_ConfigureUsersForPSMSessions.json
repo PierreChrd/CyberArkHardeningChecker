@@ -1,0 +1,16 @@
+{
+  "id": "PSM-016",
+  "title": "ConfigureUsersForPSMSessions",
+  "description": "Configure users for PSM sessions",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "medium",
+  "command": "[bool](Get-LocalGroupMember -Group 'PSMConnect' -ErrorAction SilentlyContinue)",
+  "expected": true,
+  "tags": [
+    "psm",
+    "users"
+  ]
+}

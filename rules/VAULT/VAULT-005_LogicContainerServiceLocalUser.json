@@ -1,0 +1,16 @@
+{
+  "id": "VAULT-005",
+  "title": "Vault_LogicContainerServiceLocalUser",
+  "description": "Vault Logic Container Service LocalUser",
+  "type": "command",
+  "appliesTo": [
+    "Vault"
+  ],
+  "severity": "high",
+  "command": "[bool](Get-LocalUser -Name 'LogicContainer' -ErrorAction SilentlyContinue)",
+  "expected": true,
+  "tags": [
+    "vault",
+    "account"
+  ]
+}

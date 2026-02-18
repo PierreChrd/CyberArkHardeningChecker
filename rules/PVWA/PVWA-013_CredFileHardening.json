@@ -1,0 +1,16 @@
+{
+  "id": "PVWA-013",
+  "title": "PVWA_CredFileHardening",
+  "description": "Credential File Hardening",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "high",
+  "command": "(Get-Acl 'C:/inetpub/wwwroot/PasswordVault/Web.config').AccessToString -notmatch 'Everyone'",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "file"
+  ]
+}

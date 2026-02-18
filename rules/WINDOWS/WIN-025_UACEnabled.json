@@ -1,0 +1,18 @@
+{
+  "id": "WIN-025",
+  "title": "UAC enabled",
+  "description": "Enable User Account Control",
+  "type": "registry",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "medium",
+  "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+  "operator": "eq",
+  "expected": {
+    "EnableLUA": 1
+  },
+  "tags": [
+    "uac"
+  ]
+}

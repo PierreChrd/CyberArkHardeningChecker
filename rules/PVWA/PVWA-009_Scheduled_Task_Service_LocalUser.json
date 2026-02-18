@@ -1,0 +1,16 @@
+{
+  "id": "PVWA-009",
+  "title": "PVWA_Scheduled_Task_Service_LocalUser",
+  "description": "PVWA Scheduled Task Service LocalUser",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "medium",
+  "command": "[bool](Get-ScheduledTask -TaskName 'CyberArk PVWA Maintenance' -ErrorAction SilentlyContinue)",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "task"
+  ]
+}

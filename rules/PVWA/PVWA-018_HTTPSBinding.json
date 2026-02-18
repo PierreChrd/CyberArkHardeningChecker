@@ -1,0 +1,18 @@
+{
+  "id": "PVWA-018",
+  "title": "PVWA_HTTPS_Binding_Present",
+  "description": "PVWA site must expose HTTPS binding",
+  "type": "iisBinding",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "critical",
+  "site": "PasswordVault",
+  "protocol": "https",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "tls",
+    "iis"
+  ]
+}

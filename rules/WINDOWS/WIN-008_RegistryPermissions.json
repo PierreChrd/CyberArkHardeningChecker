@@ -1,0 +1,17 @@
+{
+  "id": "WIN-008",
+  "title": "RegistryPermissions",
+  "description": "Check Registry permissions",
+  "type": "command",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "medium",
+  "command": "([string](Get-Acl 'HKLM:SOFTWARE').AccessToString) -notmatch 'Everyone'",
+  "expected": true,
+  "tags": [
+    "cross",
+    "registry",
+    "acl"
+  ]
+}

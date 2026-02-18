@@ -1,0 +1,16 @@
+{
+  "id": "CPM-009",
+  "title": "CPMScanner_AutomaticStartup",
+  "description": "CPM Scanner StartType must be Automatic",
+  "type": "command",
+  "appliesTo": [
+    "CPM"
+  ],
+  "severity": "high",
+  "tags": [
+    "cpm",
+    "service"
+  ],
+  "command": "(Get-Service 'CyberArk Central Policy Manager Scanner').StartType -eq 'Automatic'",
+  "expected": true
+}

@@ -1,0 +1,16 @@
+{
+  "id": "WIN-021",
+  "title": "Windows Firewall (Domain) enabled",
+  "description": "Domain profile should be enabled",
+  "type": "command",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "low",
+  "command": "(Get-NetFirewallProfile -Profile Domain).Enabled",
+  "operator": "eq",
+  "expected": true,
+  "tags": [
+    "firewall"
+  ]
+}

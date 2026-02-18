@@ -1,0 +1,16 @@
+{
+  "id": "WIN-006",
+  "title": "EventLogSizeAndRetention",
+  "description": "Check Event Log and Retention settings",
+  "type": "command",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "medium",
+  "command": "(@('Security','System','Application') | % { (Get-WinEvent -ListLog $_).MaximumSizeInBytes -ge 20971520 }).Count -eq 3",
+  "expected": true,
+  "tags": [
+    "cross",
+    "eventlog"
+  ]
+}

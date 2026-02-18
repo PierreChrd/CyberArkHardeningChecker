@@ -1,0 +1,17 @@
+{
+  "id": "PVWA-021",
+  "title": "No_HTTP_Binding",
+  "description": "PVWA must not expose HTTP binding",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "critical",
+  "tags": [
+    "pvwa",
+    "iis",
+    "tls"
+  ],
+  "command": "(Get-WebBinding -Name 'PasswordVault' -Protocol http | Measure).Count -eq 0",
+  "expected": true
+}

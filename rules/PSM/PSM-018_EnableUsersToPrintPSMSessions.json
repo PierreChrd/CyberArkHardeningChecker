@@ -1,0 +1,16 @@
+{
+  "id": "PSM-018",
+  "title": "EnableUsersToPrintPSMSessions",
+  "description": "Enable users to print PSM sessions",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "low",
+  "command": "(Get-ItemProperty 'HKLM:/SOFTWARE/CyberArk/PSM').AllowPrint -ne 1",
+  "expected": true,
+  "tags": [
+    "psm",
+    "policy"
+  ]
+}

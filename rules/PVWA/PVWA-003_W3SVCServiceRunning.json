@@ -1,0 +1,11 @@
+{
+  "id": "PVWA-003",
+  "title": "PVWA_W3SVC_Running",
+  "description": "World Wide Web Publishing Service must be running on the PVWA server.",
+  "type": "service",
+  "appliesTo": ["PVWA"],
+  "severity": "critical",
+  "serviceName": "World Wide Web Publishing Service",
+  "expectedStatus": "Running",
+  "tags": ["pvwa", "iis", "service"]
+}

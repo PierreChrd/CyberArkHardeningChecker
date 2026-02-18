@@ -1,0 +1,11 @@
+{
+  "id": "VAULT-001",
+  "title": "Vault_EventNotificationEngine_Running",
+  "description": "Cyber-Ark Event Notification Engine must be running on the Vault server.",
+  "type": "service",
+  "appliesTo": ["Vault"],
+  "severity": "high",
+  "serviceName": "Cyber-Ark Event Notification Engine",
+  "expectedStatus": "Running",
+  "tags": ["vault", "service"]
+}

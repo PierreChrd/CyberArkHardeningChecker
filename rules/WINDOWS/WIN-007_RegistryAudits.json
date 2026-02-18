@@ -1,0 +1,17 @@
+{
+  "id": "WIN-007",
+  "title": "RegistryAudits",
+  "description": "Check Registry Audits access control",
+  "type": "command",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "medium",
+  "command": "(auditpol /get /subcategory:'Registry' | Select-String 'Success and Failure') -ne $null",
+  "expected": true,
+  "tags": [
+    "cross",
+    "registry",
+    "audit"
+  ]
+}

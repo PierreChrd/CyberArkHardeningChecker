@@ -1,0 +1,20 @@
+{
+  "id": "WIN-022",
+  "title": "RDP_Requires_NLA",
+  "description": "NLA must be enabled for RDP",
+  "type": "registry",
+  "appliesTo": [
+    "Windows",
+    "PSM"
+  ],
+  "severity": "high",
+  "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server\\WinStations\\RDP-Tcp",
+  "operator": "eq",
+  "expected": {
+    "UserAuthentication": 1
+  },
+  "tags": [
+    "rdp",
+    "nla"
+  ]
+}

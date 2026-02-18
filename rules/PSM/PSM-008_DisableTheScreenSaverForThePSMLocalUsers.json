@@ -1,0 +1,16 @@
+{
+  "id": "PSM-008",
+  "title": "DisableTheScreenSaverForThePSMLocalUsers",
+  "description": "Disable ScreenSaver for PSM Local users",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "low",
+  "command": "(Get-ItemProperty -Path 'HKU:/.DEFAULT/Control Panel/Desktop' -ErrorAction SilentlyContinue).ScreenSaveActive -eq '0'",
+  "expected": true,
+  "tags": [
+    "psm",
+    "ux"
+  ]
+}

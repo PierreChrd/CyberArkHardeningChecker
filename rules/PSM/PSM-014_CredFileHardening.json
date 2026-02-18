@@ -1,0 +1,16 @@
+{
+  "id": "PSM-014",
+  "title": "PSM_CredFileHardening",
+  "description": "Credential File Hardening",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "high",
+  "command": "(Get-Acl 'C:/Program Files/CyberArk/PSM/credfile').AccessToString -notmatch 'Everyone'",
+  "expected": true,
+  "tags": [
+    "psm",
+    "file"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "PSM-011",
+  "title": "HardenRDS",
+  "description": "Harden Remote Desktop Services",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "high",
+  "command": "(Get-ItemProperty 'HKLM:/SYSTEM/CurrentControlSet/Control/Terminal Server/WinStations/RDP-Tcp' -ErrorAction SilentlyContinue).UserAuthentication -eq 1",
+  "expected": true,
+  "tags": [
+    "psm",
+    "rdp"
+  ]
+}

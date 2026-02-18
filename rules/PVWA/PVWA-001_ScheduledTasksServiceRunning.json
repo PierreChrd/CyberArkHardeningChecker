@@ -1,0 +1,11 @@
+{
+  "id": "PVWA-001",
+  "title": "PVWA_ScheduledTasks_Running",
+  "description": "CyberArk Scheduled Tasks service must be running on the PVWA server.",
+  "type": "service",
+  "appliesTo": ["PVWA"],
+  "severity": "high",
+  "serviceName": "CyberArk Scheduled Tasks",
+  "expectedStatus": "Running",
+  "tags": ["pvwa", "service"]
+}

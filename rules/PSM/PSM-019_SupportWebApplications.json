@@ -1,0 +1,16 @@
+{
+  "id": "PSM-019",
+  "title": "SupportWebApplications",
+  "description": "Support Web Applications on PSM",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "low",
+  "command": "Test-Path 'C:/Program Files/CyberArk/PSM/Components/Web'",
+  "expected": true,
+  "tags": [
+    "psm",
+    "web"
+  ]
+}

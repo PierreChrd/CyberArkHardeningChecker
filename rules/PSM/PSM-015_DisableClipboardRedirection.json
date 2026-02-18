@@ -1,0 +1,19 @@
+{
+  "id": "PSM-015",
+  "title": "Disable RDP clipboard redirection",
+  "description": "Clipboard redirection should be disabled on PSM hosts",
+  "type": "registry",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "high",
+  "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+  "operator": "eq",
+  "expected": {
+    "DisableClipboardRedirection": 1
+  },
+  "tags": [
+    "psm",
+    "rdp"
+  ]
+}

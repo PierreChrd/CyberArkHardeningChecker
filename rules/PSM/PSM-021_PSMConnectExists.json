@@ -1,0 +1,17 @@
+{
+  "id": "PSM-021",
+  "title": "PSMConnect_User_Exists",
+  "description": "PSMConnect account should exist on PSM",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "high",
+  "command": "[bool](Get-LocalUser -Name 'PSMConnect' -ErrorAction SilentlyContinue)",
+  "operator": "eq",
+  "expected": true,
+  "tags": [
+    "psm",
+    "account"
+  ]
+}

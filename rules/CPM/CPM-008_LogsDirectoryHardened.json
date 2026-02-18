@@ -1,0 +1,16 @@
+{
+  "id": "CPM-008",
+  "title": "Logs_Directory_Hardened",
+  "description": "CPM Logs directory must be restricted",
+  "type": "command",
+  "appliesTo": [
+    "CPM"
+  ],
+  "severity": "high",
+  "tags": [
+    "cpm",
+    "filesystem"
+  ],
+  "command": "(Get-Acl 'C:/Program Files (x86)/CyberArk/Password Manager/Logs').AccessToString -notmatch 'Everyone'",
+  "expected": true
+}

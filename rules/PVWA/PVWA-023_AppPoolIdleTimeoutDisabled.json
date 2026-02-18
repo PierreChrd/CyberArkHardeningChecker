@@ -1,0 +1,16 @@
+{
+  "id": "PVWA-023",
+  "title": "AppPool_IdleTimeout_Disabled",
+  "description": "PVWA AppPool IdleTimeout must be disabled",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "medium",
+  "tags": [
+    "pvwa",
+    "iis"
+  ],
+  "command": "(Get-WebConfiguration /system.applicationHost/applicationPools/add[@name='PVWAAppPool'] | Select -ExpandProperty processModel).idleTimeout.TotalMinutes -eq 0",
+  "expected": true
+}

@@ -1,0 +1,16 @@
+{
+  "id": "VAULT-004",
+  "title": "Vault_DomainJoined",
+  "description": "Check that the Vault was not joined to a Domain",
+  "type": "command",
+  "appliesTo": [
+    "Vault"
+  ],
+  "severity": "critical",
+  "command": "-not (Get-WmiObject Win32_ComputerSystem).PartOfDomain",
+  "expected": true,
+  "tags": [
+    "vault",
+    "isolation"
+  ]
+}

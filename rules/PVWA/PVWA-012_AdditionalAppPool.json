@@ -1,0 +1,17 @@
+{
+  "id": "PVWA-012",
+  "title": "PVWA_AdditionalAppPool",
+  "description": "PVWA Application Pool configuration",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "high",
+  "command": "(Get-WebAppPoolState -Name 'PVWAAppPool').Value -eq 'Started'",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "iis",
+    "apppool"
+  ]
+}

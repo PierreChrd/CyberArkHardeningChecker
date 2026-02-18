@@ -1,0 +1,11 @@
+{
+  "id": "PSM-004",
+  "title": "PSM_RemoteDesktopServices_Running",
+  "description": "Remote Desktop Services must be running on the PSM.",
+  "type": "service",
+  "appliesTo": ["PSM"],
+  "severity": "critical",
+  "serviceName": "Remote Desktop Services",
+  "expectedStatus": "Running",
+  "tags": ["psm", "service", "rdp"]
+}

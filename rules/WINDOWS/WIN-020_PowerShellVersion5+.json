@@ -1,0 +1,16 @@
+{
+  "id": "WIN-020",
+  "title": "PowerShell >= 5",
+  "description": "Minimum PSVersion 5",
+  "type": "command",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "medium",
+  "command": "$PSVersionTable.PSVersion.Major",
+  "operator": "ge",
+  "expected": 5,
+  "tags": [
+    "runtime"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "WIN-001",
+  "title": "ImportingINFConfiguration",
+  "description": "Importing an INF File to the Local Machine",
+  "type": "command",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "medium",
+  "command": "Test-Path C:/Windows/inf/hardening.inf",
+  "expected": true,
+  "tags": [
+    "cross",
+    "inf"
+  ]
+}

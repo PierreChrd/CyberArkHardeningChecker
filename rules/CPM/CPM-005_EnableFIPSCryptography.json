@@ -1,0 +1,19 @@
+{
+  "id": "CPM-005",
+  "title": "CPM_EnableFIPSCryptography",
+  "description": "CPM Enable FIPS Cryptography",
+  "type": "registry",
+  "appliesTo": [
+    "CPM"
+  ],
+  "severity": "high",
+  "path": "HKLM:/SYSTEM/CurrentControlSet/Control/Lsa/FIPSAlgorithmPolicy",
+  "operator": "eq",
+  "expected": {
+    "Enabled": 1
+  },
+  "tags": [
+    "cpm",
+    "fips"
+  ]
+}

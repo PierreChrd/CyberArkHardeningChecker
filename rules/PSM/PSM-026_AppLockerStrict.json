@@ -1,0 +1,16 @@
+{
+  "id": "PSM-026",
+  "title": "AppLocker_Strict",
+  "description": "AppLocker must be strict",
+  "type": "command",
+  "appliesTo": [
+    "PSM"
+  ],
+  "severity": "high",
+  "tags": [
+    "psm",
+    "applocker"
+  ],
+  "command": "(Get-AppLockerPolicy -Effective).RuleCollections[0].Rules.Count -gt 0",
+  "expected": true
+}

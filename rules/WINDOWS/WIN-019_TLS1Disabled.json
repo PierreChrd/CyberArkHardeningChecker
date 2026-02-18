@@ -1,0 +1,20 @@
+{
+  "id": "WIN-019",
+  "title": "TLS_1-0_Disabled",
+  "description": "Disable TLS 1.0 (server)",
+  "type": "registry",
+  "appliesTo": [
+    "Windows"
+  ],
+  "severity": "high",
+  "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\Schannel\\Protocols\\TLS 1.0\\Server",
+  "operator": "eq",
+  "expected": {
+    "Enabled": 0,
+    "DisabledByDefault": 1
+  },
+  "tags": [
+    "tls",
+    "schannel"
+  ]
+}

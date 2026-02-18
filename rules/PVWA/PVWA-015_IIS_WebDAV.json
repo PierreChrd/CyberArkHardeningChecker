@@ -1,0 +1,17 @@
+{
+  "id": "PVWA-015",
+  "title": "PVWA_IIS_WebDAV",
+  "description": "PVWA IIS WebDAV",
+  "type": "command",
+  "appliesTo": [
+    "PVWA"
+  ],
+  "severity": "high",
+  "command": "-not (Get-WindowsFeature Web-DAV-Publishing).Installed",
+  "expected": true,
+  "tags": [
+    "pvwa",
+    "iis",
+    "webdav"
+  ]
+}
