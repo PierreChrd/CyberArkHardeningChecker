@@ -1,14 +1,14 @@
 # CyberArk Hardening Rules Reference
 
-Ce document liste l’ensemble des règles de durcissement disponibles dans le projet, organisées par composant.
+This document lists all the hardening rules available in the project, organized by component.
 
-Chaque règle est définie selon le format commun :
-- **id** : identifiant unique
-- **title** : nom court de la règle
-- **description** : description fonctionnelle
+Each rule is defined according to the following common format:
+- **id** : unique identifier
+- **title** : short name of the rule
+- **description** : functional description
 - **type** : service / registry / command / iisBinding / iisAppPool / port
-- **severity** : criticité
-- **tags** : classification utile pour filtrage
+- **severity** : criticality
+- **tags** : classification useful for filtering
 
 
 ---
