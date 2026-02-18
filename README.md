@@ -13,7 +13,7 @@
 
 ---
 
-####  *🇺🇸🇬🇧English Version [README-ENGLISH.md](./README-ENGLISH.md)*
+####  *🇺🇸 🇬🇧English Version [README-ENGLISH.md](./README-ENGLISH.md)*
 
 ---
 
